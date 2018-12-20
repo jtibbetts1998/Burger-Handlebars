@@ -4,9 +4,9 @@
 
 <ul>
     {{#each bugers}}
-    {{#unless devoured}}
-    {{> bugers/bugers-block devoured=true}}
-    {{/unless}}
+     {{#unless devoured}}
+      {{> bugers/bugers-block devoured=true}}
+     {{/unless}}
     {{/each}}
 </ul>
 
@@ -14,14 +14,19 @@
 
 <ul>
     {{#each bugers}}
-    {{#if devoured}}
-    {{> bugers/bugers-block devoured=false}}
-    {{/if}}
+     {{#if devoured}}
+      {{> bugers/bugers-block devoured=false}}
+     {{/if}}
     {{/each}}
 </ul>
 
-<h2>It's chow time</h2>
+<h2>Dinner time</h2>
 <form class="create-form">
-    <label for="ca">Burger Name:</label>
-    <
+    <div class="form-group">
+        <label for="ca">Burger Name:</label>
+        <input type="radio" name="devoured" value="1" checked> Devoured<br>
+        <input type="radio" name="devoured" value="0"> Eaten
+    </div>
+
+    <button type="submit">Chow Down</button>
 </form>

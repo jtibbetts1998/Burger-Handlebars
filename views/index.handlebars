@@ -1,0 +1,27 @@
+<h1>Burger Time!</h1>
+
+<h2>Burgers that have NOT been devoured</h2>
+
+<ul>
+    {{#each bugers}}
+    {{#unless devoured}}
+    {{> bugers/bugers-block devoured=true}}
+    {{/unless}}
+    {{/each}}
+</ul>
+
+<h2>Burgers that HAVE been devoured</h2>
+
+<ul>
+    {{#each bugers}}
+    {{#if devoured}}
+    {{> bugers/bugers-block devoured=false}}
+    {{/if}}
+    {{/each}}
+</ul>
+
+<h2>It's chow time</h2>
+<form class="create-form">
+    <label for="ca">Burger Name:</label>
+    <
+</form>

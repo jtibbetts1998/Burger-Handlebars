@@ -20,12 +20,18 @@
     {{/each}}
 </ul>
 
-<h2>Dinner time</h2>
+<h2>Add a Burger</h2>
 <form class="create-form">
+
     <div class="form-group">
-        <label for="ca">Burger Name:</label>
+        <label for="ba">Burger Name:</label>
+        <input type="text" id="ba" name="name">
+    </div>
+
+    <div class="form-group">
+        <label for="devoured">Hungry?</label><br>
         <input type="radio" name="devoured" value="1" checked> Devoured<br>
-        <input type="radio" name="devoured" value="0"> Eaten
+        <input type="radio" name="devoured" value="0"> I'm good
     </div>
 
     <button type="submit">Chow Down</button>

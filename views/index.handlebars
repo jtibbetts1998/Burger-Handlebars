@@ -4,9 +4,9 @@
 
 <ul>
     {{#each bugers}}
-     {{#unless devoured}}
-      {{> bugers/bugers-block devoured=true}}
-     {{/unless}}
+    {{#unless devoured}}
+    {{> bugers/bugers-block devoured=true}}
+    {{/unless}}
     {{/each}}
 </ul>
 
@@ -14,9 +14,9 @@
 
 <ul>
     {{#each bugers}}
-     {{#if devoured}}
-      {{> bugers/bugers-block devoured=false}}
-     {{/if}}
+    {{#if devoured}}
+    {{> bugers/bugers-block devoured=false}}
+    {{/if}}
     {{/each}}
 </ul>
 
